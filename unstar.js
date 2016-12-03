@@ -67,8 +67,8 @@
     ]
 
     let stars = document.querySelectorAll('.js-toggler-target')
+    let reg = /\b[a-z-]+/ig
 
-    let reg = /\b[a-z-]+/ig;
     ;[].map.call(stars, s => {
         let label = s.getAttribute('aria-label')
         
